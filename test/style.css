@@ -1,0 +1,440 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter-Medium.ttf);
+}
+a, a:link, a:visited, a:active, a:hover{
+    text-decoration: none;
+    font-family: inter;
+    color: #18216D;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    color: #18216D;    
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+.orange{
+    background-image: url(img/orange.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 767px;
+    height: 770px;
+}
+
+/* header */
+.header{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-group{
+    display: none;
+}
+.header-icon{
+    margin-right: 100px;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 507px;
+    margin-right: 30%;
+}
+.header-menu__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.header-sign-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.header-menu__sign-in{
+    margin-right: 40px;
+    width: 60px;
+}
+.header-menu__download{
+    background-color: #18216D;
+    color: #fff !important; 
+    padding: 16px 27px;
+    border-radius: 6px;
+}
+
+/* main */
+.main{
+    align-items: center;
+    background-image: url(img/main.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 500px;
+    margin-top: 65px;
+    margin-bottom: 120px;
+}
+.main-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    width: 500px;
+    padding-top: 80px;
+    margin-bottom: 16px;
+}
+.main-subtitle{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    width: 500px;
+    margin-bottom: 34px;
+}
+.main-button{
+    background-color: #00ECD0;
+    border-radius: 6px;
+    padding: 23px 37px;
+    font-size: 17px;
+    line-height: 21px;  
+    border: none;
+}
+.main-button:hover {
+    background-color: #4bfae5; 
+    color: #6d729c;
+}
+.main-img{
+    display: none;
+    
+}
+
+/* middle */
+.middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.middle-collab{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+    width: 490px;
+}
+.middle-numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle-numbers__item{
+    margin-right: 100px;
+}
+.numbers-text{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+.numbers-descr{
+    font-size: 16px;
+    line-height: 28px;
+}
+.numbers-img{
+    margin: 8px 0;
+}
+
+/* companies */
+.companies{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+/* features */
+.features{
+    margin-top: 130px;
+    margin-bottom: 45px;
+}
+.features-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.features-subtitle{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px 290px;
+    opacity: 0.9;
+}
+
+.features-details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 500px;
+}
+.item-img{
+    margin-bottom: 25px;
+}
+.item-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 14px;
+}
+.item-subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+.item-learn-more{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+@media (max-width: 1350px){
+    .header-menu{
+        margin-right: 20%;
+    }
+}
+@media (max-width: 1250px){
+    .header-icon{
+        margin-right: 0;
+    }
+    .header-menu{
+        width: 400px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 1050px){
+    .header{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header-menu{
+        display: none;
+    }
+    .header-sign-in{
+        display: none;
+    }
+    .btn-group{
+        display: block;
+    }
+    .main{
+        background-image: none;
+        text-align: center;
+        height: auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    .main-title{
+        padding-top: 0;
+        width: auto;
+        margin: 0 65px;
+        margin-bottom: 20px;
+    }
+    .main-subtitle{
+        width: auto;
+        margin: 0 65px;
+        margin-bottom: 20px;
+    }
+    .main-img{
+        display: block;
+        background-image: url(img/main-hidden.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 302px;
+        margin-top: 41px;
+    }
+    .middle{
+        flex-direction: column;
+    }
+    .middle-collab{
+        margin-bottom: 20px;
+        width: 730px;
+        text-align: center;
+    }
+    .middle-numbers__item{
+        margin: 0 76px;
+    }
+    .companies img{
+        width: 80%;
+    }
+    .features-subtitle{
+        margin: 10px 240px;
+    }
+    .features-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-item{
+        width: 560px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+@media (max-width: 770px){
+    .orange{
+        top: -5%;
+        left: -50%;
+    }
+    .main-title{
+        font-size: 28px;
+        line-height: 27px;
+        margin-bottom: 0;
+    }
+    .main-subtitle{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .middle-collab{
+        width: auto;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .numbers-text{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .numbers-descr {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .companies{
+        margin-top: 25px;
+    }
+    .companies img{
+        width: 70px;
+    }
+    .features{
+        margin-top: 50px;
+    }
+    .features-title{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .features-subtitle{
+        font-size: 14px;
+        line-height: 20px;  
+        opacity: 0.5;
+        margin: auto;
+        width: 480px;
+        margin-top: 10px;
+    }
+    .item-title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .item-subtitle{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .item-learn-more{
+        font-size: 20px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 590px){
+    .orange{
+        width: 375px;
+        top: -30%;
+        left: 0;
+    }
+    .main{
+        margin-bottom: 40px;
+    }
+    .main-title{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .main-subtitle{
+        margin-top: 20px;
+        margin-right: 47px;
+        margin-left: 47px;
+    }
+    .main-button{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 11px 17px;
+    }
+    .middle-collab{
+        margin: 27px;
+    }
+    .item-delete{
+        display: none;
+    }
+    .features-item{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 525px){
+    .middle-numbers__item{
+        margin: 0 35px;
+    }
+    .features-subtitle{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 400px){
+    .header-icon img{
+        width: 60%;
+    }
+    .middle-numbers__item{
+        line-height: 0px;
+    }
+    .middle-collab{
+        text-align: start;
+        margin-top: 0;
+    }
+    .numbers-text {
+        font-size: 30px;
+    }
+    .numbers-img{
+        margin: 0;
+    }
+    .numbers-img img{
+       height: 8px;
+       width: 8px;
+    }
+    .numbers-descr{
+        font-size: 8px;
+    }
+    .item-img {
+        margin-bottom: 15px;
+    }
+    .item-img img{
+        width: 48px;
+        height: 48px;
+    }
+    .item-subtitle{
+        margin-bottom: 20px;
+    }
+    .features-item{
+        text-align: left;
+    }
+}
